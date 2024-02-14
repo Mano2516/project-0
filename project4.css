@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent  {
+    background-color: #eee;
+    width: 1100px;
+    height: 1300px;
+    padding: 50px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(4 , 1fr);
+    gap: 10px 10px;
+    grid-template-areas: "osama osama ahmed shady"
+    "mohamedib mahmoud mahmoud shady "
+    "mohamedib ezz ezz shady"
+    "mohamedsa ibrahim gamal eman";
+    justify-content: center;
+}
+.parent div {
+    position: relative;
+}
+.parent div::after {
+    content: "''";
+    color: #ccc;
+    position: absolute;
+    font-size: 65px;
+    right: 3px;
+    bottom: -25px;
+}
+h3 {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    margin-left: 6px;
+    background-color: white;
+}
+h5 {
+    color: gray;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: white;
+}
+#main{
+    font-weight: bold;
+    margin-bottom: 9px;
+    background-color: white;
+    margin-left: 10px;
+}
+#cont {
+    background-color: white;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+.osama {
+    grid-area: osama;
+    background-color: white ;
+    border-bottom: red 3px solid;
+}
+.ahmed {
+    grid-area: ahmed;
+    background-color: white;
+    border-bottom: red 3px solid;
+}
+.shady {
+    grid-area: shady ;
+    background-color: black;
+    color: white;
+    border-bottom: red 3px solid;
+}
+.shady h3 , .shady h5 , .shady #main , .shady #cont {
+    background-color: black;
+}
+.mohamedib {
+    grid-area: mohamedib ;
+    background-color: white;
+    border-bottom: red 3px solid;
+}
+.mahmoud {
+    grid-area: mahmoud ;
+    background-color: black;
+    color: white;
+    border-bottom: red 3px solid;
+}
+.mahmoud h3 , .mahmoud h5 , .mahmoud #main , .mahmoud #cont {
+    background-color: black;
+}
+.ezz {
+    grid-area: ezz;
+    background-color: white;
+    border-bottom: red 3px solid;
+}
+.mohamedsa {
+    grid-area: mohamedsa; 
+    background-color: white;
+    border-bottom: red 3px solid;
+}
+.ibrahim {
+    grid-area: ibrahim ;
+    color: white;
+    background-color: black;
+    border-bottom: red 3px solid;
+}
+.ibrahim h3 , .ibrahim h5 , .ibrahim #main , .ibrahim #cont {
+    background-color: black;
+}
+.gamal {
+    grid-area: gamal ;
+    background: white;
+    border-bottom: red 3px solid;
+}
+.eman {
+    grid-area: eman ;
+    background-color: white;
+    border-bottom: red 3px solid;
+}
